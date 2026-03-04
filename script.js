@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cfNote = document.getElementById("cfNote");
 
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const name = document.getElementById("cname");
@@ -234,21 +234,34 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Simulate async send
       const btn = form.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending…';
 
-      // Formspree handles submission 
-      form.reset();
+      // Actually send to Formspree
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          form.reset();
+          cfNote.textContent = "✓ Message sent! I'll get back to you soon.";
+          cfNote.classList.add("success");
+          setTimeout(() => { cfNote.textContent = ""; cfNote.className = "cf-note"; }, 5000);
+        } else {
+          cfNote.textContent = "✗ Something went wrong. Please email me directly.";
+          cfNote.classList.add("err");
+        }
+      } catch (error) {
+        cfNote.textContent = "✗ Network error. Please email me directly.";
+        cfNote.classList.add("err");
+      }
+
       btn.disabled = false;
       btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
-      cfNote.textContent = "✓ Message sent! I'll get back to you soon.";
-      cfNote.classList.add("success");
-      setTimeout(() => {
-        cfNote.textContent = "";
-        cfNote.className = "cf-note";
-      }, 5000);
     });
   }
 
