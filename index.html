@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gautam Kumar</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts: Playfair Display (display) + Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Cursor glow follows mouse -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">GK<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="ResumeGautam.pdf" download class="btn btn-primary nav-resume">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="#about" class="mnav-link">About</a></li>
+          <li><a href="#skills" class="mnav-link">Skills</a></li>
+          <li><a href="#projects" class="mnav-link">Projects</a></li>
+          <li><a href="#experience" class="mnav-link">Experience</a></li>
+          <li><a href="#education" class="mnav-link">Education</a></li>
+          <li>
+            <a href="#certifications" class="mnav-link">Certifications</a>
+          </li>
+          <li><a href="#contact" class="mnav-link">Contact</a></li>
+          <li>
+            <a href="ResumeGautam.pdf" download class="mnav-link mnav-accent"
+              >Download Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-mesh">
+        <div class="mesh-circle mc1"></div>
+        <div class="mesh-circle mc2"></div>
+        <div class="mesh-circle mc3"></div>
+      </div>
+      <div class="hero-body container">
+        <div class="hero-text">
+          <span class="hero-eyebrow"
+            ><span class="dot-pulse"></span> Available for opportunities</span
+          >
+          <h1 class="hero-name">Hi, I'm<br /><em>Gautam</em> Kumar</h1>
+          <p class="hero-role" id="heroRole">MCA Student &amp; Developer</p>
+          <p class="hero-bio">
+            Passionate about building full-stack web applications and solving
+            real-world problems through clean, purposeful code. Currently
+            pursuing MCA at Chandigarh University.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary"
+              >View My Work <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="ResumeGautam.pdf" target="_blank" class="btn btn-ghost">
+              <i class="fa-solid fa-eye"></i> View Resume
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/gautamrai-28"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/gautam-kumar-mca"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="mailto:gautamrai1321@gmail.com" aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-circle"><span>GK</span></div>
+            <div class="chip chip-1">
+              <i class="fa-brands fa-node-js"></i> Node.js
+            </div>
+            <div class="chip chip-2">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="chip chip-3"><i class="fa-solid fa-code"></i> C++</div>
+            <div class="chip chip-4">MySQL</div>
+          </div>
+          <div class="hero-stats">
+            <div class="hstat">
+              <span class="hstat-n">7.74</span><span class="hstat-l">CGPA</span>
+            </div>
+            <div class="hstat-div"></div>
+            <div class="hstat">
+              <span class="hstat-n">3+</span
+              ><span class="hstat-l">Projects</span>
+            </div>
+            <div class="hstat-div"></div>
+            <div class="hstat">
+              <span class="hstat-n">7+</span
+              ><span class="hstat-l">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue">
+        <span>Scroll</span><i class="fa-solid fa-chevron-down bounce"></i>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">01 — About</span>
+          <h2 class="sec-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <p>
+              I’m Gautam Kumar, an aspiring <strong>Software Developer</strong> and MCA student
+              with a strong foundation in programming and web development. I
+              enjoy solving problems, building efficient solutions, and
+              continuously improving my technical skills.
+            </p>
+            <p>
+              With knowledge of languages like Java, Python, C++, and
+              JavaScript, I focus on writing clean code and understanding how
+              systems work behind the scenes. I’m passionate about learning new
+              technologies and growing into a skilled, impactful software
+              engineer.
+            </p>
+          </div>
+          <div class="about-side reveal">
+            <div class="info-list">
+              <div class="info-row">
+                <span class="info-key"
+                  ><i class="fa-solid fa-location-dot"></i> Location</span
+                ><span class="info-val">Mohali</span>
+              </div>
+              <div class="info-row">
+                <span class="info-key"
+                  ><i class="fa-solid fa-envelope"></i> Email</span
+                ><a href="mailto:gautamrai1321@gmail.com" class="info-val link"
+                  >gautamrai1321@gmail.com</a
+                >
+              </div>
+              <div class="info-row">
+                <span class="info-key"
+                  ><i class="fa-solid fa-phone"></i> Phone</span
+                ><span class="info-val">+91 628 343 8088</span>
+              </div>
+              <div class="info-row">
+                <span class="info-key"
+                  ><i class="fa-brands fa-github"></i> GitHub</span
+                ><a
+                  href="https://github.com/gautamrai-28"
+                  target="_blank"
+                  class="info-val link"
+                  >gautamrai-28</a
+                >
+              </div>
+              <div class="info-row">
+                <span class="info-key"
+                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</span
+                ><a
+                  href="https://linkedin.com/in/gautam-kumar-mca"
+                  target="_blank"
+                  class="info-val link"
+                  >gautam-kumar-mca</a
+                >
+              </div>
+            </div>
+            <a
+              href="ResumeGautam.pdf"
+              download
+              class="btn btn-primary w-full mt-20"
+              ><i class="fa-solid fa-download"></i> Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-tinted" id="skills">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">02 — Skills</span>
+          <h2 class="sec-title">Skills &amp; Technologies</h2>
+          <p class="sec-sub">
+            Tools and technologies I work with on a daily basis.
+          </p>
+        </div>
+        <!-- Icon grid -->
+        <div class="tech-grid">
+          <div class="tech-card reveal" title="JavaScript">
+            <div class="tc-icon" style="background: #f0db4f">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JS"
+              />
+            </div>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-card reveal" title="Python">
+            <div class="tc-icon" style="background: #3b75a7">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+              />
+            </div>
+            <span>Python</span>
+          </div>
+          <div class="tech-card reveal" title="C++">
+            <div class="tc-icon" style="background: #00599c">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++"
+              />
+            </div>
+            <span>C++</span>
+          </div>
+          <div class="tech-card reveal" title="Java">
+            <div class="tc-icon" style="background: #e76f00">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+              />
+            </div>
+            <span>Java</span>
+          </div>
+          <div class="tech-card reveal" title="C">
+            <div class="tc-icon" style="background: #2c5f8a">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                alt="C"
+              />
+            </div>
+            <span>C</span>
+          </div>
+          <div class="tech-card reveal" title="PHP">
+            <div class="tc-icon" style="background: #777bb3">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                alt="PHP"
+              />
+            </div>
+            <span>PHP</span>
+          </div>
+          <div class="tech-card reveal" title="HTML5">
+            <div class="tc-icon" style="background: #e44d26">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+              />
+            </div>
+            <span>HTML5</span>
+          </div>
+          <div class="tech-card reveal" title="CSS3">
+            <div class="tc-icon" style="background: #264de4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+              />
+            </div>
+            <span>CSS3</span>
+          </div>
+          <div class="tech-card reveal" title="Node.js">
+            <div class="tc-icon" style="background: #3c873a">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+              />
+            </div>
+            <span>Node.js</span>
+          </div>
+          <div class="tech-card reveal" title="MySQL">
+            <div class="tc-icon" style="background: #85c5e0">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                alt="MySQL"
+              />
+            </div>
+            <span>MySQL</span>
+          </div>
+          <div class="tech-card reveal" title="Git">
+            <div class="tc-icon" style="background: #db8372">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+              />
+            </div>
+            <span>Git</span>
+          </div>
+          <div class="tech-card reveal" title="GitHub">
+            <div class="tc-icon" style="background: #96a7b9">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+              />
+            </div>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">03 — Projects</span>
+          <h2 class="sec-title">Projects</h2>
+          <p class="sec-sub">Things I've built &amp; shipped.</p>
+        </div>
+        <div class="proj-grid">
+          <article class="proj-card reveal">
+            <div class="proj-preview-inner" style="padding: 0">
+              <img
+                src="Images/CPU.png"
+                alt="CPU Scheduler Visualizer"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 0;
+                "
+              />
+              <span class="proj-badge">Full Stack</span>
+            </div>
+            <div class="proj-body">
+              <h3>CPU Scheduler Visualizer</h3>
+              <p class="proj-period">Dec 2025 – Feb 2026</p>
+              <p class="proj-desc">
+                A dynamic CPU scheduling visualizer integrating C++ algorithm
+                logic with a Node.js server, showcasing major OS scheduling
+                techniques with animated process execution timelines. Deployed
+                on Render.
+              </p>
+              <div class="proj-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  alt="C++"
+                  title="C++"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  title="Node.js"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JS"
+                  title="JavaScript"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                  title="HTML5"
+                />
+              </div>
+              <div class="proj-actions">
+                <a
+                  href="https://github.com/gautamrai-28/CPU-Scheduler-Visualizer"
+                  target="_blank"
+                  class="pa-btn pa-ghost"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://cpu-scheduler-visualizer-ny42.onrender.com/"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Google Gemini Clone -->
+          <article class="proj-card reveal">
+            <div class="proj-preview">
+              <div class="proj-preview-inner" style="padding: 0%">
+                <img
+                  src="Images/Gemini-Clone (2).png"
+                  alt="Google Gemini Clone"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0;
+                  "
+                />
+              </div>
+              <span class="proj-badge" style="background: #1a73e8">AI App</span>
+            </div>
+            <div class="proj-body">
+              <h3>Google Gemini Clone</h3>
+              <p class="proj-desc">
+                AI chat app cloned from Google Gemini with a modern 2025 UI.
+                Integrated Groq's LLaMA 3.3 70B API via Vercel serverless
+                functions with real-time typing effect, dark/light mode, and
+                chat history persistence.
+              </p>
+              <div class="proj-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML"
+                  title="HTML5"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS"
+                  title="CSS3"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JS"
+                  title="JavaScript"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
+                  alt="Vercel"
+                  title="Vercel"
+                />
+              </div>
+              <div class="proj-actions">
+                <a
+                  href="https://github.com/gautamrai-28/Google-Gemini-Clone"
+                  target="_blank"
+                  class="pa-btn pa-ghost"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://google-gemini-clone-rouge.vercel.app/"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Student Performance Analyzer -->
+          <article class="proj-card reveal">
+            <div
+              class="proj-preview"
+              style="background: linear-gradient(135deg, #f0fdf4, #bbf7d0)"
+            >
+              <div class="proj-preview-inner" style="padding: 0%">
+                <img
+                  src="Images/Student-Performance.png"
+                  alt="Student Performance Analyzer"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0;
+                  "
+                />
+              </div>
+              <span class="proj-badge" style="background: #16a34a"
+                >Python App</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>Student Performance Analyzer</h3>
+              <p class="proj-desc">
+                A app to manage and analyze student academic performance.
+                Features an interactive dashboard with subject-wise analysis,
+                correlation heatmaps, top-performer rankings, and automated demo
+                data generation.
+              </p>
+              <div class="proj-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  title="Python"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                  alt="SQLite"
+                  title="SQLite"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                  alt="Pandas"
+                  title="Pandas"
+                />
+              </div>
+              <div class="proj-actions">
+                <a
+                  href="https://github.com/gautamrai-28/Student-Performance-Analyzer"
+                  target="_blank"
+                  class="pa-btn pa-ghost"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://student-performance-analyzerr.streamlit.app/"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- WhatsApp Chat Analyzer -->
+          <article class="proj-card reveal">
+            <div
+              class="proj-preview"
+              style="background: linear-gradient(135deg, #f0fff4, #c6f6d5)"
+            >
+              <div class="proj-preview-inner" style="padding: 0%">
+                <img
+                  src="Images/Whatsapp-Chat.png"
+                  alt="WhatsApp Chat Analyzer"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 0;
+                  "
+                />
+              </div>
+              <span class="proj-badge" style="background: #25d366"
+                >NLP App</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>WhatsApp Chat Analyzer</h3>
+              <p class="proj-desc">
+                Interactive web app to analyze exported WhatsApp chats. Features
+                VADER sentiment analysis, response time computation, emoji
+                analytics, and time-series activity visualization with an
+                end-to-end regex parsing pipeline.
+              </p>
+              <div class="proj-tech">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  title="Python"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                  alt="Pandas"
+                  title="Pandas"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg"
+                  alt="Matplotlib"
+                  title="Matplotlib"
+                />
+              </div>
+              <div class="proj-actions">
+                <a
+                  href="https://github.com/gautamrai-28/Whatsapp-chat-analyzer"
+                  target="_blank"
+                  class="pa-btn pa-ghost"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+                <a
+                  href="https://whatsapp-chatt-analyzerr.streamlit.app/"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="proj-card reveal proj-card-ghost">
+            <div
+              class="proj-preview"
+              style="background: linear-gradient(135deg, #d1fae5, #a7f3d0)"
+            >
+              <div class="proj-preview-inner ghost-preview">
+                <div class="ghost-icon"><i class="fa-solid fa-plus"></i></div>
+                <p>Next Project</p>
+              </div>
+              <span class="proj-badge" style="background: #10b981"
+                >Coming Soon</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>Next Project</h3>
+              <p class="proj-period">In Progress</p>
+              <p class="proj-desc">
+                Always building something new. Stay tuned for the next exciting
+                project that's currently in the works!
+              </p>
+              <div class="proj-actions">
+                <a
+                  href="#contact"
+                  class="pa-btn pa-live w-full"
+                  style="justify-content: center"
+                  ><i class="fa-solid fa-envelope"></i> Let's Collaborate</a
+                >
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-tinted" id="experience">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">04 — Experience</span>
+          <h2 class="sec-title">Work History</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div>
+                  <h3>Python Programming Intern</h3>
+                  <p class="tl-org">
+                    <i class="fa-solid fa-building"></i> YBI Foundation
+                  </p>
+                </div>
+                <span class="tl-date">June 2024 – Aug 2024</span>
+              </div>
+              <ul class="tl-list">
+                <li>
+                  Completed a 2-month internship focused on Python fundamentals
+                  and introductory machine learning concepts.
+                </li>
+                <li>
+                  Implemented programs involving data manipulation, algorithm
+                  design, and basic model development.
+                </li>
+                <li>
+                  Applied ML basics including data preprocessing and simple
+                  predictive modeling.
+                </li>
+                <li>
+                  Strengthened problem-solving and debugging skills through
+                  hands-on coding tasks.
+                </li>
+              </ul>
+              <div class="tl-chips">
+                <span>Python</span><span>Machine Learning</span
+                ><span>Data Manipulation</span><span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">05 — Education</span>
+          <h2 class="sec-title">Academic Journey</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card active-edu reveal">
+            <div class="edu-top">
+              <span class="edu-badge current">Current</span
+              ><span class="edu-year">2025 – 2027</span>
+            </div>
+            <div class="edu-ico">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Master of Computer Applications</h3>
+            <p class="edu-inst">Chandigarh University, Mohali</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">CGPA</span
+              ><span class="cgpa-val">7.74 / 10</span>
+            </div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-top"><span class="edu-year">2022 – 2025</span></div>
+            <div class="edu-ico"><i class="fa-solid fa-university"></i></div>
+            <h3>Bachelor of Computer Applications</h3>
+            <p class="edu-inst">
+              Gian Jyoti Institute of Management &amp; Technology, Mohali
+            </p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">CGPA</span
+              ><span class="cgpa-val">8.14 / 10</span>
+            </div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-top"><span class="edu-year">2021 – 2022</span></div>
+            <div class="edu-ico"><i class="fa-solid fa-school"></i></div>
+            <h3>Class 12<sup>th</sup> — CBSE</h3>
+            <p class="edu-inst">
+              Govt. Model Sr. Secondary School, Sec 37B, Chandigarh
+            </p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">Percentage</span
+              ><span class="cgpa-val">71%</span>
+            </div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-top"><span class="edu-year">2019 – 2020</span></div>
+            <div class="edu-ico"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Class 10<sup>th</sup> — CBSE</h3>
+            <p class="edu-inst">Govt. Model High School, Sec 42B, Chandigarh</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">Percentage</span
+              ><span class="cgpa-val">70.6%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section section-tinted" id="certifications">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">06 — Achievements</span>
+          <h2 class="sec-title">Certifications &amp; Achievements</h2>
+          <p class="sec-sub">
+            Recognition, learning, and competitive milestones.
+          </p>
+        </div>
+        <div class="proj-grid">
+          <article class="proj-card reveal">
+            <div
+              class="proj-preview cert-preview"
+              style="background: linear-gradient(135deg, #fef3c7, #fde68a)"
+            >
+              <div class="proj-preview-inner" style="padding: 0">
+                <img
+                  src="Images/AR_VR.png"
+                  alt="Certificate Name"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <span class="proj-badge" style="background: #f59e0b"
+                >Feb 2026</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>RealityX Pre-Event Bootcamp</h3>
+              <p class="proj-period">AI-FEST 2026 · 3-Day XR Bootcamp</p>
+              <p class="proj-desc">
+                Participated in an intensive 3-day Extended Reality bootcamp at
+                AI-FEST 2026, exploring AR/VR development concepts and immersive
+                technologies.
+              </p>
+              <div class="proj-actions single">
+                <a
+                  href="Certificates/AR_VR_3day.pdf"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                >
+                  <i class="fa-solid fa-eye"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div
+              class="proj-preview cert-preview"
+              style="background: linear-gradient(135deg, #fce7f3, #fbcfe8)"
+            >
+              <div class="proj-preview-inner" style="padding: 0">
+                <img
+                  src="Images/HackForage2.0.png"
+                  alt="Certificate Name"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <span class="proj-badge" style="background: #ec4899"
+                >Jan 2026</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>Hack Forge 2.0</h3>
+              <p class="proj-period">Hackathon · Jan 2026</p>
+              <p class="proj-desc">
+                Competed in Hack Forge 2.0, collaborating under time pressure to
+                ideate, design, and build a working prototype from scratch
+                within tight deadlines.
+              </p>
+              <div class="proj-actions single">
+                <a
+                  href="Certificates/HackForage2.0.pdf"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                >
+                  <i class="fa-solid fa-eye"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card reveal">
+            <div
+              class="proj-preview cert-preview"
+              style="background: linear-gradient(135deg, #dbeafe, #bfdbfe)"
+            >
+              <div class="proj-preview-inner" style="padding: 0">
+                <img
+                  src="Images/FullStack.png"
+                  alt="Certificate Name"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <span class="proj-badge" style="background: #3b82f6"
+                >Sept 2024</span
+              >
+            </div>
+            <div class="proj-body">
+              <h3>Full Stack Development Workshop</h3>
+              <p class="proj-period">Techlive Solutions · Sept 2024</p>
+              <p class="proj-desc">
+                Completed a comprehensive full-stack development workshop
+                covering modern web frameworks, databases, deployment best
+                practices, and real-world project building.
+              </p>
+              <div class="proj-actions single">
+                <a
+                  href="Certificates/FullStack.pdf"
+                  target="_blank"
+                  class="pa-btn pa-live"
+                >
+                  <i class="fa-solid fa-eye"></i> View Certificate
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- DSA Coding Profiles Strip -->
+        <div class="dsa-strip">
+          <p class="dsa-text">
+            <i class="fa-solid fa-code"></i>
+            Practiced and solved 100+ competitive coding problems on GFG &
+            LeetCode.
+          </p>
+          <div class="dsa-links">
+            <a
+              href="https://www.geeksforgeeks.org/profile/gautamrai"
+              target="_blank"
+              class="dsa-btn gfg-btn"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
+                alt="GFG"
+              />
+              GeeksforGeeks
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/gautam_28/"
+              target="_blank"
+              class="dsa-btn lc-btn"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                alt="LeetCode"
+              />
+              LeetCode
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sec-header">
+          <span class="sec-label">07 — Contact</span>
+          <h2 class="sec-title">Let's Connect</h2>
+          <p class="sec-sub">
+            Open to internships, collaborations, and interesting projects.
+          </p>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-left reveal">
+            <div class="contact-info-cards">
+              <a href="mailto:gautamrai1321@gmail.com" class="cic"
+                ><div class="cic-ico"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <p class="cic-lbl">Email</p>
+                  <p class="cic-val">gautamrai1321@gmail.com</p>
+                </div></a
+              >
+              <a href="tel:+916283438088" class="cic"
+                ><div class="cic-ico"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <p class="cic-lbl">Phone</p>
+                  <p class="cic-val">+91 628 343 8088</p>
+                </div></a
+              >
+              <a
+                href="https://linkedin.com/in/gautam-kumar-mca"
+                target="_blank"
+                class="cic"
+                ><div class="cic-ico">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                  <p class="cic-lbl">LinkedIn</p>
+                  <p class="cic-val">gautam-kumar-mca</p>
+                </div></a
+              >
+              <a
+                href="https://github.com/gautamrai-28"
+                target="_blank"
+                class="cic"
+                ><div class="cic-ico"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <p class="cic-lbl">GitHub</p>
+                  <p class="cic-val">gautamrai-28</p>
+                </div></a
+              >
+              <div class="cic static">
+                <div class="cic-ico">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="cic-lbl">Location</p>
+                  <p class="cic-val">Mohali, Punjab</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpqjvlyy" method="POST" novalidate>
+            <div class="cf-group">
+              <label for="cname">Your Name</label
+              ><input type="text" id="cname" placeholder="John Doe" required />
+            </div>
+            <div class="cf-group">
+              <label for="cemail">Email Address</label
+              ><input
+                type="email"
+                id="cemail"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="cf-group">
+              <label for="csubject">Subject</label
+              ><input
+                type="text"
+                id="csubject"
+                placeholder="Internship Opportunity"
+              />
+            </div>
+            <div class="cf-group">
+              <label for="cmessage">Message</label
+              ><textarea
+                id="cmessage"
+                rows="5"
+                placeholder="Hi Gautam, I'd like to..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="cf-note" id="cfNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 Gautam Kumar. Built with passion.</p>
+        <div class="footer-links">
+          <a href="https://github.com/gautamrai-28" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/gautam-kumar-mca" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:gautamrai1321@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
