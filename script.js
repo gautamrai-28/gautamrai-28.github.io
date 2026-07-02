@@ -156,7 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (roleEl) {
     const roles = [
       "Full-Stack Developer",
-      "C++ Enthusiast",
       "Competitive Programmer",
       "Problem Solver & Builder",
     ];

@@ -303,48 +303,34 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   animation: fadeUp .8s .2s ease both;
 }
 
-.avatar-card {
+/* ---- Profile Picture ---- */
+.profile-pic-wrap {
   position: relative;
-  width: 300px; height: 300px;
-  display: flex; align-items: center; justify-content: center;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--accent), #60A5FA);
+  box-shadow: 0 0 0 6px rgba(45,108,223,.12), var(--shadow-xl);
+  transition: var(--transition);
 }
-.avatar-glow {
-  position: absolute; inset: -16px;
-  background: radial-gradient(circle at 50% 50%, rgba(45,108,223,.18), transparent 70%);
-  border-radius: 50%; animation: glow 3s ease-in-out infinite alternate;
+.profile-pic-wrap:hover {
+  box-shadow: 0 0 0 8px rgba(45,108,223,.20), var(--shadow-xl);
+  transform: scale(1.03);
 }
-@keyframes glow { from { opacity: .6; } to { opacity: 1; } }
-
-.avatar-circle {
-  width: 180px; height: 180px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, #60A5FA 100%);
-  display: flex; align-items: center; justify-content: center;
-  box-shadow: var(--shadow-xl);
-  position: relative; z-index: 1;
-}
-.avatar-circle span {
-  font-family: var(--font-display); font-size: 3.5rem; font-weight: 800;
-  color: #fff; letter-spacing: -.03em;
+.profile-pic {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--surface);
 }
 
-/* Floating chips */
-.chip {
-  position: absolute;
-  background: var(--surface); border: 1.5px solid var(--border);
-  border-radius: var(--radius-xl); padding: 7px 14px;
-  font-size: .78rem; font-weight: 600;
-  box-shadow: var(--shadow-md); white-space: nowrap;
-  display: flex; align-items: center; gap: 6px;
-  z-index: 2; animation: chipFloat 4s ease-in-out infinite alternate;
+/* Responsive */
+@media (max-width: 720px) {
+  .profile-pic-wrap { width: 160px; height: 160px; }
 }
-.chip i { font-size: .9rem; }
-.chip-1 { top: 10px; left: -10px; animation-delay: 0s; color: #3C873A; }
-.chip-2 { top: 10px; right: -10px; animation-delay: -1s; color: #3B75A7; }
-.chip-3 { bottom: 50px; left: -20px; animation-delay: -2s; color: var(--accent); }
-.chip-4 { bottom: 30px; right: -10px; animation-delay: -3s; color: var(--orange); }
-@keyframes chipFloat {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-8px); }
+@media (max-width: 480px) {
+  .profile-pic-wrap { width: 130px; height: 130px; }
 }
 
 /* Hero stats */
@@ -777,9 +763,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   .nav-links, .nav-resume { display: none; }
   .hamburger { display: flex; }
   .section { padding: 72px 0; }
-  .avatar-card { width: 240px; height: 240px; }
-  .avatar-circle { width: 140px; height: 140px; }
-  .avatar-circle span { font-size: 2.8rem; }
   .edu-grid { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; text-align: center; }
